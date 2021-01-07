@@ -1,0 +1,280 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="This is a website that sell aircraft model">
+<meta name="keywords" content="aircraft model, skykings, model aircraft">
+<meta content="IE-edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>S.K | PRODUCT</title>
+<!--fav-icon---------------->
+<link rel="shortcut icon" href="images/fav-icon.png"/>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+<nav> 
+    <div class="navigation">
+        <a href="index.html" class="logo">SkyKings</a>
+        <!--menu-icon------------->
+        <div class="toggle"></div>
+        <!--menu----------------->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About </a></li>
+            <li><a href="product.html">Our Product</a>
+            </li>
+            <li><a href="faqs.html">FAQS</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <!--right-menu----------->
+        <div class="right-menu">
+            <a href="javascript:void(0);" class="search">
+                <i class="fas fa-search"></i>
+            </a>
+            <a href="javascript:void(0);" class="user">
+                <i class="far fa-user"></i>
+            </a>
+            <a href="cart.html">
+                <i class="fas fa-shopping-cart">
+                </i>
+            </a>
+        </div>
+        </div>
+    </nav>
+	<div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="image/2008.jpg" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="image/2008.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/20082.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/20083.jpg" width="100%" class="small-img">
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-2">
+                <p><a href="index.html">Home</a><font color="black"> / </font><a href="product.html">Product</a></p>
+                <h1>2008 Eurofighter Typhoon F.2</h1>
+                <h4>RM 99.00</h4>
+                <input type="number" value="1">
+                <a href="cart.html" class="btn">Add to Cart</a>
+                <h3>Product Details</h3>
+                <br>
+                <p><b><font color="black">Dimension </b><br>
+					Width : 16.99cm <br>
+					Height : 6.5cm <br>
+					Material : Alloy <br>
+					Origin country from : Military plane of USA </font></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p><a href="product.html">View More</a></p>
+        </div>
+    </div>
+
+    <div class="small-container">
+
+
+        <div class="row">
+
+            <div class="col-4">
+                <img src="image/1942.jpg" />
+                <h4><a href="1942.html">1942 Curtiss P-40B</a></h4>
+                <p><font color="black">RM 714.00</font></p>
+            </div>
+            <div class="col-4">
+                <img src="image/gloster.jpg" />
+                <h4><a href="gloster.html">Gloster Meteor f.8 - UK 1954 -</a></h4>
+                <p><font color="black">RM 79.00</font></p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function () {
+            ProductImg.src = SmallImg[0].src;
+        }
+        SmallImg[1].onclick = function () {
+            ProductImg.src = SmallImg[1].src;
+        }
+        SmallImg[2].onclick = function () {
+            ProductImg.src = SmallImg[2].src;
+        }
+        SmallImg[3].onclick = function () {
+            ProductImg.src = SmallImg[3].src;
+        }
+    </script>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+<div class="search-bar">
+    
+        <!--search-input------->
+        <div class="search-input">
+        <input type="text" placeholder="Search For Product" name="search" />
+        <!--cancel-btn--->
+        <a href="javascript:void(0);" class="search-cancel">
+            <i class="fas fa-times"></i>
+        </a>
+    
+    </div>
+    </div>
+
+    <div class="form">
+        <!--login---------->
+        <div class="login-form">
+            <!--cancel-btn---------------->
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Log In</strong>
+            <!--inputs-->
+            <form>
+                <input type="email" name="email" placeholder="Example@gmail.com" required/>
+                <input type="password" name="password" placeholder="Password" required/>
+                <input type="submit" value="Log In"/>
+            </form>
+            <!--forget-and-sign-up-btn-->
+            <div class="form-btns">
+                <a href="#" class="forget">Forget Your Password?</a>
+                <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+            </div>
+        </div>
+            <!--Sign-up---------->
+            <div class="sign-up-form">
+                <!--cancel-btn---------------->
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+                <strong>Sign Up</strong>
+                <!--inputs-->
+                <form>
+                    <input type="text" name="fullname" placeholder="Full Name" required/>
+                    <input type="email" name="email" placeholder="Example@gmail.com" required/>
+                    <input type="password" name="password" placeholder="Password" required/>
+                    <input type="submit" value="Sign Up"/>
+                </form>
+                <!--forget-and-sign-up-btn-->
+                <div class="form-btns">
+                    <a href="javascript:void(0);" class="already-account">
+                        Already Have Account?</a>
+    
+                </div>
+            </div>
+    </div>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+ /*-----For Search Bar-----------------------------*/
+    $(document).on('click','.search',function(){
+        $('.search-bar').addClass('search-bar-active')
+    });
+ 
+    $(document).on('click','.search-cancel',function(){
+        $('.search-bar').removeClass('search-bar-active')
+    });
+
+$(document).on('click','.user,.already-account',function(){
+        $('.form').addClass('login-active').removeClass('sign-up-active')
+    });
+ 
+    $(document).on('click','.sign-up-btn',function(){
+        $('.form').addClass('sign-up-active').removeClass('login-active')
+    });
+ 
+    $(document).on('click','.form-cancel',function(){
+        $('.form').removeClass('login-active').removeClass('sign-up-active')
+    });
+$(document).ready(function(){
+		$('.toggle').click(function(){
+			$('.toggle').toggleClass('active')
+			$('.navigation').toggleClass('active')
+		})
+	});
+
+ </script>
+ 
+ <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+<footer>
+        <div class="container">
+            <div class="ftr">
+                <h3>SkyKings</h3>
+                <ul class="content">
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="product.html">PRODUCT</a></li>
+                    <li><a href="faqs.html">FAQS</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Contact</h3>
+                <ul class="content">
+                    <li>skykings@gmail.com</li>
+                    <li>04-334452</li>
+                    <li>Taman Sungai Dua, Sungai Dua, Pulau Pinang, 03800</li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Social</h3>
+                <ul class="content">
+                    <li><a href="https://www.facebook.com/Skykings-101568715238923" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/skykings__/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Join Our Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter Your Email." required>
+                    <div class="btn">
+                        <input type="submit" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+	<p class="s-res">This website are designed for IMD311 Group Assignment.</p>
+    </footer>
+
+</body>
+</html>
